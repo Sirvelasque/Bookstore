@@ -1,20 +1,21 @@
 import React, { useState } from 'react';
 
 function Form() {
-  const [title, setTitle] = useState('', '');
+  const [title, setTitle] = useState('');
+  const [author, setAuthor] = useState('')
 
   const handleInput = (e) => {
     setTitle(e.target.value);
   };
 
+  const handleAuthor = (e) => {
+    setAuthor(e.target.value);
+  }
+
   return (
     <form>
       <input type="text" value={title} onInput={(e) => handleInput(e)} />
-      <select>
-        <option value="Love Comedy">Love Comedy</option>
-        <option value="Adventures">Adventures</option>
-        <option value="Science Fiction">Science Fiction</option>
-      </select>
+      <input type="text" value={author} onInput={(e) => handleAuthor(e)} />
       <button type="submit">ADD BOOK</button>
     </form>
   );

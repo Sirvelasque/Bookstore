@@ -8,12 +8,11 @@ function BookList() {
 
   return (
     <div>
-      {books.map((el) => (
+      {books.map((book) => (
         <Book
           key={uuidv4()}
-          genre={el.genre}
-          title={el.genre}
-          author={el.author}
+          title={book.genre}
+          author={book.author}
         />
       ))}
       <Form />
