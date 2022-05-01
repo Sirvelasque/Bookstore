@@ -5,8 +5,10 @@ function Book(props) {
   const { title, author } = props;
   return (
     <div className="book">
-      {title}<hr />
-      {author}<hr />
+      {title}
+      <hr />
+      {author}
+      <hr />
       <button type="button">Delete</button>
     </div>
   );

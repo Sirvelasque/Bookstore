@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 function Form() {
   const [title, setTitle] = useState('');
-  const [author, setAuthor] = useState('')
+  const [author, setAuthor] = useState('');
 
   const handleInput = (e) => {
     setTitle(e.target.value);
@@ -10,7 +10,7 @@ function Form() {
 
   const handleAuthor = (e) => {
     setAuthor(e.target.value);
-  }
+  };
 
   return (
     <form>
