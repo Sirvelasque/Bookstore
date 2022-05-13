@@ -8,19 +8,17 @@ export default function booksReducer(state = [], action) {
         ...state,
         action.book,
       ];
-    
+
     case REMOVE:
-      return state.filter((book, index) => index !== action.index)
+      return state.filter((book, index) => index !== action.index);
     
     default:
       return state;
   }
 }
 
-export function addBook(book){
-  return { type: ADD, book}
+export function addBook(book) {
+  return { type: ADD, book };
 }
 
-export const removeBook = (index) => {
-  return { type: REMOVE, index };
-}
+export const removeBook = (index) => { return ({ type: REMOVE, index });}
