@@ -10,18 +10,18 @@ class App extends React.PureComponent {
     return (
       <div>
         <div className="App">
-        <Router>
-          <header className="App-header">
-            <div className='header-left'>
-            <h1>Bookstore CMS</h1>
-          <Navbar />
-          </div>
-          </header>
-          <Routes>
-            <Route path="/" exact element={<BookList />} />
-            <Route path="/Categories" element={<Categories />} />
-          </Routes>
-        </Router>
+          <Router>
+            <header className="App-header">
+              <div className="header-left">
+                <h1>Bookstore CMS</h1>
+                <Navbar />
+              </div>
+            </header>
+            <Routes>
+              <Route path="/" exact element={<BookList />} />
+              <Route path="/Categories" element={<Categories />} />
+            </Routes>
+          </Router>
         </div>
       </div>
     );

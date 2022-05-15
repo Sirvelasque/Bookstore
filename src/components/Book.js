@@ -9,22 +9,22 @@ function Book(props) {
   const { title, author, itemid } = props;
   return (
     <div className={styles.book}>
-       <div className={styles['left-col']}>
+      <div className={styles['left-col']}>
         <div className={styles.category}>Fiction</div>
         <div className={styles.Title}>{title}</div>
         <div className={styles.Author}>{author}</div>
         <div className={styles.actions}>
           <button type="button">Comments</button>
           |
-      <button
-        type="button"
-        onClick={() => {
-          dispatch(removeBook(itemid));
-        }}
-      >
-        Delete
-      </button>
-      </div>
+          <button
+            type="button"
+            onClick={() => {
+              dispatch(removeBook(itemid));
+            }}
+          >
+            Delete
+          </button>
+        </div>
       </div>
       <div className={styles['center-col']}>
         <div className={styles.progress} />
