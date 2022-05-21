@@ -1,7 +1,6 @@
 # Bookstore
 
-> App where you can make a books list and save it by title, author and category
-
+> App where you can make a books list to save it by title, author and category then save changes in an API
 
 ## Built With
 
