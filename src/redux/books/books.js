@@ -1,5 +1,5 @@
-const ADD = 'ADD_BOOK';
-const REMOVE = 'REMOVE_BOOK';
+const ADD = 'bookstore/book/ADD_BOOK';
+const REMOVE = 'bookstore/book/REMOVE_BOOK';
 
 export default function booksReducer(state = [], action) {
   switch (action.type) {
