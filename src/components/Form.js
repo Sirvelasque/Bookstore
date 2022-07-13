@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import { addBook } from '../redux/books/books';
 
-let itemid = 0;
+let id = 0;
 
 function Form() {
   const [title, setTitle] = useState('');
@@ -25,7 +25,7 @@ function Form() {
   };
 
   const generateid = () => {
-    itemid = uuidv4();
+    id = uuidv4();
   };
 
   return (
@@ -36,7 +36,7 @@ function Form() {
         type="button"
         onClick={() => {
           generateid();
-          dispatch(addBook({ title, author, itemid }));
+          dispatch(addBook({ title, author, item_id: id }));
           clearInputs();
         }}
       >

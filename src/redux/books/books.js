@@ -30,7 +30,7 @@ export const addBook = (book) => async (dispatch) => {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      item_id: book.itemid,
+      item_id: book.item_id,
       title: book.title,
       author: book.author,
       category: 'Fiction',
