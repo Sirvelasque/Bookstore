@@ -1,6 +1,6 @@
-const ADD = 'ADD_BOOK';
-const REMOVE = 'REMOVE_BOOK';
-const GET_BOOKS = 'GET_BOOKS';
+const ADD = 'bookstore/book/ADD_BOOK';
+const REMOVE = 'bookstore/book/REMOVE_BOOK';
+const GET_BOOKS = 'bookstore/book/GET_BOOKS';
 const baseURL = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/uoShF4O9zpumxO5gm0vp/books/';
 
 export default function booksReducer(state = [], action) {
