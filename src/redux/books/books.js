@@ -15,7 +15,6 @@ export default function booksReducer(state = [{ title: 'Soul Knife', author: 'Wa
         ...state.slice(action.index + 1),
       ];
 
-
     default:
       return state;
   }
