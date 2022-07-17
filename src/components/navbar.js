@@ -1,16 +1,29 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import style from './css/NavBar.module.css';
 
 const Navbar = () => (
-  <header>
-    <h1>Bookstore!</h1>
-    <nav>
-      <ul>
-        <li><Link to="/">Books</Link></li>
-        <li><Link to="/Categories">Categories</Link></li>
-      </ul>
-    </nav>
-  </header>
+  <nav className={style.nav}>
+    <ul className={style.list}>
+      <li className={style.listItem}>
+        <NavLink
+          to="/"
+          className={({ isActive }) => `${style['nav-link']} ${(isActive ? style.selected : '')}`}
+        >
+          BOOKS
+        </NavLink>
+      </li>
+      <li className={style.listItem}>
+        <NavLink
+          to="/categories"
+          className={({ isActive }) => `${style['nav-link']} ${(isActive ? style.selected : '')}`}
+        >
+          CATEGORIES
+        </NavLink>
+      </li>
+    </ul>
+  </nav>
+
 );
 
 export default Navbar;
