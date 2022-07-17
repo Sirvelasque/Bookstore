@@ -1,9 +1,9 @@
 .list {
-  display: flex
+  display: flex;
 }
 
 .list > li:nth-child(1) {
-  margin-left: 3rm;
+  margin-left: 3rem;
 }
 
 .listItem {
