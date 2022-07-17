@@ -76,3 +76,7 @@ body {
   list-style: none;
   margin-bottom: 2rem;
 }
+
+.ListContainer {
+  width: 70%;
+}

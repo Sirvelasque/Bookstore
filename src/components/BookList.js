@@ -18,8 +18,7 @@ function BookList() {
   }, [started, books.length]);
 
   return (
-    <div>
-      <Form />
+    <div className="ListContainer">
       {books.map((book) => (
         <Book
           key={uuidv4()}
@@ -28,6 +27,8 @@ function BookList() {
           author={book.author}
         />
       ))}
+      <hr />
+      <Form />
     </div>
   );
 }
